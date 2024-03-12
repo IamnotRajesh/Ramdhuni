@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramdhuni Temple</title>
+    <!--custom css link-->
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--header design-->
+    <header>
+        <a href="#" class="logo">Ram<span>Dhu</span>ni.</a>
+
+        <ul class="navlist">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html" class="active">About us</a></li>
+            <li><a href="Photos.html" class="active">Photos</a></li>
+            <li><a href="Events.html" class="active">Events</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon">
+             </div>
+    </header>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Med<span>ias</span></h1>
+        </div>
+        <div class="box">
+
+            <video width="400" height="240" controls>
+              <source src="interview.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+
+     <!--CUSTOM JS LINK-->
+    <script>
+        var video = document.getElementById("myVideo");
+        window.onload = function(){
+        document.getElementById("autoplay").play()
+    }
+        function playPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function setVolume(volume) {
+            video.volume = volume;
+        }
+    </script>
+</body>
+</html>
